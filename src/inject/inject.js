@@ -12,18 +12,20 @@ var sketch = function(p5) {
     p5.clear();
     p5.noFill();
     p5.noLoop();
-    p5.stroke(255);
+    p5.stroke(255, 100);
   }
   // draw the guidelines
   p5.draw = function() {
 		p5.clear();
+    p5.strokeWeight(2);
+    // var slope = p5.mouseY/p5.mouseX;
 		p5.line(0,0, p5.mouseX, p5.mouseY);
 		p5.line(285,0, p5.mouseX, p5.mouseY);
 		p5.line(570,0, p5.mouseX, p5.mouseY);
 		p5.line(0,274, p5.mouseX, p5.mouseY);
 		p5.line(285,274, p5.mouseX, p5.mouseY);
 		p5.line(570,274, p5.mouseX, p5.mouseY);
-		p5.ellipse(p5.mouseX, p5.mouseY, 16);
+		p5.ellipse(p5.mouseX, p5.mouseY, 20);
 	}
   // check if SHIFT key is pressed to change the layout
   p5.mouseMoved = function() {
