@@ -17,7 +17,9 @@ var sketch = function(p5) {
   // draw the guidelines
   p5.draw = function() {
 		p5.clear();
+    // set stroke weight
     p5.strokeWeight(2);
+    // set transparency
     p5.stroke(255, 30);
 		p5.line(0,0, p5.mouseX, p5.mouseY);
 		p5.line(285,0, p5.mouseX, p5.mouseY);
@@ -25,6 +27,7 @@ var sketch = function(p5) {
 		p5.line(0,274, p5.mouseX, p5.mouseY);
 		p5.line(285,274, p5.mouseX, p5.mouseY);
 		p5.line(570,274, p5.mouseX, p5.mouseY);
+    // increase the transparency of the circle
     p5.stroke(255, 100);
 		p5.ellipse(p5.mouseX, p5.mouseY, 20);
 	}
