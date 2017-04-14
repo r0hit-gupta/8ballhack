@@ -1,9 +1,9 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "8 Ball Pool Helper",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "Miniclip 8 Ball Pool",
+  "homepage_url": "",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
