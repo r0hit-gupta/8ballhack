@@ -8,7 +8,7 @@ var sketch = function(p5) {
     console.log('p5 running');
     var c = p5.createCanvas(p5.windowWidth, p5.windowHeight);
     c.style('pointer-events', 'none');
-    c.position(190,400);
+    c.position(offsetLeft + 90, offsetTop + 140);
     p5.clear();
     p5.noFill();
     p5.noLoop();
@@ -29,7 +29,7 @@ var sketch = function(p5) {
 		p5.line(570,274, p5.mouseX, p5.mouseY);
     // increase the transparency of the circle
     p5.stroke(255, 100);
-		p5.ellipse(p5.mouseX, p5.mouseY, 20);
+		p5.ellipse(p5.mouseX, p5.mouseY, 16);
 	}
   // check if SHIFT key is pressed to change the layout
   p5.mouseMoved = function() {
@@ -38,7 +38,19 @@ var sketch = function(p5) {
     }
   }
 
+  p5.keyPressed = function() {
+    if(p5.keyIsDown(p5.SHIFT)){
+      p5.draw();
+    }
+  }
+
 }
+
+var bodyRect = document.body.getBoundingClientRect(),
+    elemRect = document.getElementById('gm-wrap').getBoundingClientRect(),
+    offsetTop   = elemRect.top - bodyRect.top;
+    offsetLeft   = elemRect.left - bodyRect.left;
+    console.log(offsetTop, offsetLeft);
 
 // The above function closure is passed into a p5 object constructor
 // this starts the sketch.
