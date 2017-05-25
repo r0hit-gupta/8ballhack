@@ -31,13 +31,13 @@ var sketch = function(p5) {
     p5.stroke(255, 100);
 		p5.ellipse(p5.mouseX, p5.mouseY, 16);
 	}
-  // check if SHIFT key is pressed to change the layout
+  // change the layout if mouse is moved and SHIFT key is pressed
   p5.mouseMoved = function() {
     if(p5.keyIsDown(p5.SHIFT)){
       p5.draw();
     }
   }
-
+  
   p5.keyPressed = function() {
     if(p5.keyIsDown(p5.SHIFT)){
       p5.draw();
@@ -45,12 +45,11 @@ var sketch = function(p5) {
   }
 
 }
-
+// find the game element and its position
 var bodyRect = document.body.getBoundingClientRect(),
     elemRect = document.getElementById('gm-wrap').getBoundingClientRect(),
-    offsetTop   = elemRect.top - bodyRect.top;
-    offsetLeft   = elemRect.left - bodyRect.left;
-    console.log(offsetTop, offsetLeft);
+    offsetTop = elemRect.top - bodyRect.top;
+    offsetLeft = elemRect.left - bodyRect.left;
 
 // The above function closure is passed into a p5 object constructor
 // this starts the sketch.
