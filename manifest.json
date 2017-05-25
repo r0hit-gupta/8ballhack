@@ -1,9 +1,9 @@
 {
   "name": "8 Ball Pool Helper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Miniclip 8 Ball Pool",
-  "homepage_url": "http://wws.fsa",
+  "homepage_url": "http://google.com",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
