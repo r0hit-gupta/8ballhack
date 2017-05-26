@@ -37,7 +37,6 @@ var sketch = function(p5) {
       p5.draw();
     }
   }
-  
   p5.keyPressed = function() {
     if(p5.keyIsDown(p5.SHIFT)){
       p5.draw();

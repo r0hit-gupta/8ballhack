@@ -10,11 +10,6 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "background": {
-    "scripts": [
-      "src/bg/background.js"
-    ]
-  },
   "page_action": {
     "default_icon": "icons/icon19.png",
     "default_title": "page action demo",
