@@ -1,7 +1,7 @@
 {
   "name": "8 Ball Pool Helper",
   "version": "0.0.2",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "Miniclip 8 Ball Pool",
   "homepage_url": "http://google.com",
   "icons": {
